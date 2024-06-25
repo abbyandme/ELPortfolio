@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Emily Lederer's Portfolio</title>
+
+        <link rel="stylesheet" href="./components/css/topNav.css">
+        <link rel="stylesheet" href="./components/css/topBanner.css">
+        <link rel="stylesheet" href="./components/css/scroll_nav.css">
+        <link rel="stylesheet" href="./components/css/skills.css">
+        <link rel="stylesheet" href="./components/css/projects.css">
+        <link rel="stylesheet" href="./components/css/form.css">
+        <link rel="stylesheet" href="./components/css/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--typewriter effect js file-->
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+        <!--Carousel Icons File-->
+        <script src="https://kit.fontawesome.com/433ca606ee.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <section class="nav-container">
+            <div class="banner">
+                <header class="primary-header">            
+                    <nav class="navBar flex" id="navBar">
+                        <ul class="primary-nav" data-visible="false" aria-label="Main">
+                            <li>
+                                <a aria-label="Logo"
+                                tabindex="-1"
+                                href="">
+                                <img class="logo" tabindex="1" src="./components/css/img/logo.png" alt="Logo"> 
+                                </a>
+                            </li>
+                            <div class="nav-container flex">
+                                <li>
+                                    <a class="link-hover" 
+                                    id="link-hover"
+                                    aria-label="Home" 
+                                    href="">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-hover"
+                                    id="link-hover" 
+                                    aria-label="Skills" 
+                                    href="#skills">
+                                        Skills
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-hover" 
+                                    id="link-hover"
+                                    aria-label="Projects" 
+                                    href="#projects">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="connect-button" id="connect-button" href="#contact">
+                                        <b>Let's Connect</b>
+                                    </a> 
+                                </li>
+                            </div>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </section>
+        <section class="banner-container">
+            <div class="banner-text">
+                <h1 class="welcome"> Welcome to My Portfolio </h1>
+                <h1 class="text type1">Hi! I'm Emily<br></h1>
+                <div class="container"> 
+                    <span class="text type2" id="type" aria-hidden="true"></span>
+                </div>
+                <p class="programs" >
+                    I have worked with programs such as HTML, CSS, JavaScript, Python, 
+                    jQuery, React, C+ and Linux. I have also worked with Microsoft PowerApps,
+                    Dynamics 365 and Azure. I love designing and problem-solving and have security
+                    clearance in Canada.
+                </p>
+            </div>
+
+            <div class="shape">
+                <img class="girl" 
+                src="./components/css/img/banner/girl.png" 
+                alt="A happy Girl and two dogs go for a walk">
+            </div>
+        </section>
+
+        <a id="skills"></a>
+        <section class="skill-bg">
+            <div class="skill-banner">
+                <h1 class="skill-header">Skills</h1>
+            </div>
+            <div class="section-padding" id="testimonial">
+            <div class="skill-container">
+                <div class="owl-carousel owl-theme" id="testCarousel">
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="img-thumb">
+                                <img src="./components/css/img/skills/ps.png" alt="" role="presentation">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    <a>Problem-solving</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="img-thumb">
+                                <img src="./components/css/img/skills/adapt.png" alt="" role="presentation">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    <a>Adaptible</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="img-thumb">
+                                <img src="./components/css/img/skills/design.png" alt="" role="presentation">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    <a>Design</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="img-thumb">
+                                <img src="./components/css/img/skills/react.png" alt="" role="presentation">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    <a>React</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="img-thumb">
+                                <img src="./components/css/img/skills/js.png" alt="" role="presentation">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    <a>Javascript</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="img-thumb">
+                                <img src="./components/css/img/skills/python.jpg" alt="" role="presentation">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    <a>Python</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <a id="projects"></a> 
+        <section class="pro-container">
+            <div class="project">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-back">
+                        <img src="./components/css/img/projects/ec.png" alt="" role="presentation">
+                        <h2>Ecommerce Store</h2>
+                    </div>
+                    <div class="project-front" tabindex="0">
+                        <div class="text-ctr">
+                            <h2>More Info</h2>
+                            <p>
+                                Full-stack website for art products. Completed with
+                                React.
+                                <div class="pro-btn">
+                                    <a class="project-link" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://6463079c39c2563ce118b906--animated-froyo-870714.netlify.app/">
+                                        Website
+                                    </a>
+                                    <a class="project-link" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/abbyandme/portfolio">
+                                        Github
+                                    </a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-back">
+                        <img src="./components/css/img/projects/eca.png" alt="" role="presentation">
+                        <h2>Business Inventory App</h2>
+                    </div>
+                    <div class="project-front" tabindex="0">
+                        <div class="text-ctr">
+                            <h2>More Info</h2>
+                            <p>
+                                Full-stack business inventory app. Completed with ...
+                                <div class="pro-btn">
+                                    <a class="project-link" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://6463079c39c2563ce118b906--animated-froyo-870714.netlify.app/">
+                                        App
+                                    </a>
+                                    <a class="project-link" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/abbyandme/portfolio">
+                                        Github
+                                    </a>
+                                </div>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-back">
+                        <img src="./components/css/img/projects/lp.png" alt="" role="presentation">
+                        <h2>Landing Page</h2>
+                    </div>
+                    <div class="project-front" tabindex="0">
+                        <div class="text-ctr">
+                            <h2>More Info</h2>
+                            <p>
+                                Front-end website landing page update. Completed
+                                with JavaScript.
+                                <br>
+                                <div class="pro-btn">
+                                    <a class="project-link" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://6463079c39c2563ce118b906--animated-froyo-870714.netlify.app/">
+                                        Website
+                                    </a>
+                                    <a class="project-link" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/abbyandme/landingpage">
+                                        Github
+                                    </a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a id="contact"></a>
+        <section class="connect-bg">
+            <img class="phone-img" src="./components/css/img/phone.png" alt="Girl on phone">
+            <h1 class="connect-header" id="hide">Get in Touch</h1>
+            <form class="contact-form" id="contact-form" name="form1">
+                <br>
+                <div id="fields">
+                    <div class="left">
+                        <input id="first-name"
+                        type="firstname" 
+                        size="19" 
+                        name="firstname" 
+                        placeholder="First Name*"
+                        onkeyup="validateFirstName()">
+                        <span class="fn-text" id="error-text"></span>
+                        <br><br>
+                    </div>
+                    <div class="right">
+                        <input id="last-name"
+                        type="lastname" 
+                        size="19" 
+                        name="lastname" 
+                        placeholder="Last Name*"
+                        onkeyup="validateLastName()">
+                        <span class="ln-text" id="error-text"></span>
+                        <br><br>
+                    </div>
+                    <br>
+                    <div class="left">
+                        <input id="email"
+                        type="email"  
+                        name="email" 
+                        placeholder="Email*"
+                        onkeyup="validateEmail()">
+                        <span class="email-text" id="error-text"></span>
+                        <br><br> 
+                    </div>
+                    <div class="right">
+                        <input id="phone"
+                        type="phone"
+                        name="phone" 
+                        placeholder="Phone"
+                        onkeyup="validatePhone()"
+                        onblur='addDashes(this)'>
+                        <span class="phone-text" id="error-text"></span>
+                        <br><br> 
+                    </div>
+                        <br> 
+                        <textarea class="message"
+                        id="message" 
+                        type="message"
+                        name="message" 
+                        placeholder="Message*" 
+                        rows="6″" 
+                        cols="20″"
+                        onkeyup="validateMessage()"></textarea>
+                        <span class="message-text" id="errormes-text"></span>
+                        <br><br> 
+                        <button class="submit" id="send-button">Send</button>
+                </div>
+            <div class="success" id="success">
+                <span id="submit-error"></span>
+                <p class="success-text" id="success-text">Form has been successfully submitted.</p>
+            </div>
+            </form>  
+        </section>
+
+    <div class="footer">
+        <ul class="icon-wrapper">
+            <li class="footer-logo">
+                <p>Emily L's Portfolio</p>
+            </li>
+            <li>
+                <a class="icon-container github" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Github"
+                href="https://github.com/abbyandme/portfolio">
+                    <i class="icon fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a class="icon-container linkedIn" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                href="https://github.com/abbyandme/portfolio">
+                    <i class="icon fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a class="icon-container instagram" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                href="https://github.com/abbyandme/portfolio">
+                    <i class="icon fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--JS files-->
+        <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        </script>
+        <script src="./components/js/scroll_nav.js"></script>
+        <script src="./components/js/typewriter.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("pDGA1uDMHuVEo2-b7");
+            })();
+        </script>
+        <script src="./components/js/form.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./components/js/skills.js"></script>
+    </body>
+</html>

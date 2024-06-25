@@ -1,0 +1,148 @@
+@font-face {
+    font-family: sacramento;
+    src: url(fonts/sacramento.ttf);
+}
+
+*:focus,
+*:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.footer {
+    height: 50px;
+    position: relative;
+}
+
+.footer-logo {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10px;
+    left: 0;
+}
+
+.footer-logo p {
+    font-family: 'sacramento', cursive;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                          1px -1px 0 #000,
+                         -1px -1px 0 #000;
+    color: white;
+}
+
+.icon-wrapper {
+    display: flex;
+    margin: 10px 0;
+    float: right;
+    list-style: none;
+}
+
+.icon-wrapper .icon-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px -5px rgb(0 0 0 / 10%);
+    font-size: 36px;
+    overflow: hidden;
+    opacity: 0.99;
+    background-color: #ffffff;
+    color: #121212;
+    cursor: pointer;
+}
+
+.icon-wrapper .icon-container::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    width: 120%;
+    height: 120%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    z-index: 1;
+}
+
+.icon-wrapper .icon-container .icon {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    z-index: 2;
+}
+
+.icon-wrapper .icon-container.github {
+    color: #1b1f23;
+}
+
+.icon-wrapper .icon-container.linkedIn {
+    color: #0077b5;
+}
+
+.icon-wrapper .icon-container.instagram {
+    color: #c13584;
+}
+
+.icon-wrapper .icon-container:hover .icon {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    color: #ffffff;
+}
+
+.icon-wrapper .icon-container:hover::before {
+    top: -10%;
+    left: -10%;
+}
+
+.icon-wrapper .icon-container:focus-visible .icon {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    color: #ffffff;
+}
+
+.icon-wrapper .icon-container:focus-visible::before {
+    top: -10%;
+    left: -10%;
+}
+
+.icon-wrapper .icon-container.github:hover::before {
+    background-color: #1b1f23;
+}
+
+.icon-wrapper .icon-container.github:focus-visible::before {
+    background-color: #1b1f23;
+}
+
+.icon-wrapper .icon-container.linkedIn:hover::before {
+    background-color: #0077b5;
+}
+
+.icon-wrapper .icon-container.linkedIn:focus-visible::before {
+    background-color: #0077b5;
+}
+
+.icon-wrapper .icon-container.instagram:hover::before {
+    background-color: #c13584;
+}
+
+.icon-wrapper .icon-container.instagram:focus-visible::before {
+    background-color: #c13584;
+}
+
+/*@media screen and (max-width: 768px) {
+    .icon-wrapper .icon-container {
+        width: 45px;
+        height: 45px;
+        margin: 0 5px !important;
+        font-size: 18px;
+    }    
+}

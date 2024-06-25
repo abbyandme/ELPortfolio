@@ -1,0 +1,61 @@
+
+DONE - figure out how to reference a file in src/components folder
+        .put html/css files in src folder
+        .put js files in components folder
+        .label fonts/img/html/css: folder/image name.png (if html/css is in src, then elements don't 
+         need to reference the src folder, just the folder the element is in. eg:image in img folder)
+DONE - figure out how to reference js files in src/components folder
+        .put js into src/components folder
+        .label script link ./components/js file name
+DONE - fix footer tabbing
+DONE - move header to it's own css file 
+DONE - remove any unused pictures/js files/fonts
+DONE - check each class/id/element to see if it's being used or not
+DONE - label images
+DONE - make links inside hover effect tabbable
+        .Use 'focus-within' on the hover effect instead of 'focus-visible'
+        .Don't put the focus on the link put it one the whole hover effect
+        .using 'focus' may cause the styling to happen when mouse hovers the element
+        .using 'focus-visible' only adds the styling when element is tabbed to
+DONE - make sure all of the labels in html are in the same order (eg: class, id, href, etc.)-make sure all of the labels in css are in the same order (eg: display, position, font, etc.)
+DONE - add borders to focus
+DONE - add logo text to footer
+DONE -make email for contact us form
+DONE - do backend of contact us form
+Done - add validation to form
+DONE- make carousel an infinite loop
+DONE - make errors disappear after field is fixed
+DONE -style the error messages
+DONE - add hover effect to arrow buttons
+
+
+coding:
+- make logos clickable/linked
+
+art:
+- fix leaves and shadows on project pictures so they aren't blurry - DONE
+- fix face on phone picture and add floating objects - DONE
+- make skills pictures
+- make skills photos large when clicked on?
+
+accessibility:
+- finish making website responsive
+- finish screen reader fixes
+- look into color and font changing ability for users
+- add focus effect to arrow buttons
+- make bg color the blue color in the projects focus
+- make text tabbable
+
+formatting:
+- look into how to do the styling in a better way
+- check the formatting of the html, css and javascript files.
+- change headers
+   .only one of each:  h1, h2, h2 ...
+- change span ids on form. instead do class= "fnText error-text"
+- button can't be a descendent of 'a' in let's connect button
+- add logo and let's connect button into the 'ul' and make them 'a's
+- make hamburger menu for mobile
+
+finalizing:
+- update linkedIn
+

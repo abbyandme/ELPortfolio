@@ -1,0 +1,248 @@
+
+@font-face {
+    font-family: plexmono;
+    src: url(fonts/plexmono.ttf);
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(fonts/caveat.ttf);
+}
+
+
+.connect-bg {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    height: 550px;
+    background:linear-gradient(90deg, rgb(86, 207, 161) 0%, rgba(190, 62, 70, 1) 100%);
+}
+
+@media screen and (max-width: 700px) {
+
+    .connect-bg {
+        margin-top: 200px;
+        width: 100%;
+        height: 300px;
+    }
+ 
+}
+
+ .phone-img {
+    margin-left: 30px;
+    margin-bottom: -450px;
+    width: 40%;
+    height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+
+    .phone {
+        opacity: 0;
+    }
+ 
+}
+
+.connect-header {
+    margin-left: 670px;
+    margin-bottom: 20px;
+    font-family: plexmono;
+    color: white;
+}
+
+
+form {
+    margin-left: 670px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 700px) {
+
+    form {
+        margin-top: -200px;
+        margin-left: 50px;
+        margin-right: 50px;
+        align-items: center;
+    }
+ 
+}
+
+input,
+select {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 2px;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 230px;
+    height: 25px;
+    border: 3px solid white ;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    font-family: plexmono;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+
+    input,
+    select {
+        width: 120px;
+        font-size: 8px;
+    }
+ 
+}
+
+input:hover {
+    border: 3px solid rgb(46, 46, 46);;
+}
+
+input:focus-visible {
+    background-color: hotpink;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+::placeholder {
+    color: white;
+}
+
+input:hover::placeholder {
+    color: rgb(46, 46, 46);;
+}
+
+textarea {
+    margin-left: 2px;
+    padding: 10px 20px;
+    width: 490px;
+    height: 150px;
+    border-color: white;
+    border-radius: 12px;
+    border-width: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    font-family: plexmono;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+textarea:hover {
+    border: 3px solid rgb(46, 46, 46);;
+}
+
+textarea:hover::placeholder {
+    color: rgb(46, 46, 46);;
+  }
+
+textarea:focus-visible {
+    background-color: hotpink;
+}
+
+@media screen and (max-width: 700px) {
+
+    textarea {
+        margin-bottom: -25px;
+        width: 270px;
+        height: 80px;
+        font-size: 8px;
+    }
+ 
+}
+
+
+.submit {
+    margin-left: 3px;
+    padding: 10px 20px;
+    width: 100px;
+    border: 3px solid white ;
+    border-radius: 12px;
+    border-width: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    font-weight: bolder;
+    background-color: white;
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+}
+
+.submit:hover {
+    border: 3px solid rgb(46, 46, 46);;
+}
+
+.submit:focus-visible {
+    background-color: hotpink;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+    .submit {
+        margin-left: 80px;
+        width: 100px;
+        font-size: 8px;
+    }
+ 
+}
+
+.success-text {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    font-family: caveat;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.success-text.show {
+    display: block;
+}
+
+span.fn-text, span.ln-text, span.email-text, span.phone-text, span.message-text {
+    font-style: italic;
+    font-size: 15px;
+    width: 15em;
+    min-height: 20px;
+    margin: 0;
+} 
+
+#error-text {
+    display: block;
+    margin-top: -25px;
+    text-align: center;
+    margin-bottom: -35px;
+}
+
+#errormes-text {
+    display: block;
+    text-align: center;
+    margin-bottom: -35px;
+}
+
+#submit-error {
+    margin-left: 130px !important;
+    margin-top: -30px !important;
+    font-style: italic;
+    font-size: 15px;
+    width: 15em;
+    min-height: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+
+#fields.show {
+    display: none;
+}
+
+#hide.show {
+    display: none;
+}
+
+

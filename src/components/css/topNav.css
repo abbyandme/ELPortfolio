@@ -1,0 +1,176 @@
+/*fonts*/
+@font-face {
+    font-family: robotomono;
+    src: url(fonts/robotomono.ttf);
+}
+
+@font-face {
+    font-family: chivomono;
+    src: url(fonts/chivomono.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: chivomono;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background: #42BDB7;
+}
+
+.primary-header {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    width: 5%;
+    height: 10%;
+    z-index: 2000;
+}
+
+.logo:focus-visible {
+    border: 2px solid black !important;
+    border-radius: 50% !important;
+    outline: none;
+}
+
+.primary-nav {
+    width: 100% !important;
+    position: fixed;
+    margin-top: 2rem;
+    margin-right: 15px;
+    padding: 0;
+    height: 75px;
+    float: left;
+    --gap: 3em;
+    list-style: none;
+    z-index: 1000;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--gap, 1rem);
+}
+
+.primary-nav .link-hover {
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+    font-family: robotomono;
+}
+
+.link-hover {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.link-hover:focus-visible {
+    background-color: hotpink;
+    color: white;
+}
+
+.link-hover:hover {
+    display: block;
+    font-size: 17px;
+    font-weight: 900;
+    transition: opacity 700ms, transform 700ms;
+    color: rgb(244, 129, 186);
+}
+
+.link-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.3em;
+    opacity: 0;
+    transition: opacity 700ms, transform 700ms;
+    background-color: hotpink;
+}
+
+.link-hover:hover::after,
+.link-hover:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+li:nth-child(1) .link-hover::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+li:nth-child(1) .link-hover:hover::after,
+li:nth-child(1) .link-hover:focus::after {
+    transform: scale(1);
+}
+
+li:nth-child(2) .link-hover::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+li:nth-child(2) .link-hover:hover::after,
+li:nth-child(2) .link-hover:focus::after {
+    transform: scale(1);
+}
+
+li:nth-child(3) .link-hover::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+li:nth-child(3) .link-hover:hover::after,
+li:nth-child(3) .link-hover:focus::after {
+    transform: scale(1);
+}
+
+/*connect header button*/
+#connect-button {
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 15px 10px;
+    width: 120px;
+    height: 50px;
+    inset: 0 0 0 89%;
+    --gap: 3em;
+    background-color: white;
+    list-style: none;
+    border: 2px solid #D19369;
+    border-radius: 12px;
+    font-family: chivomono;
+    font-size: 11px;
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+    z-index: 1000;
+}
+ 
+.connect-button {
+    transition-duration: 0.4s;
+}
+
+.connect-button:focus-visible {
+    background-color: #D69D74 !important;
+    color: white !important;
+}
+
+.connect-button:hover {
+    background-color: #D69D74 !important;
+    color: white !important;
+}

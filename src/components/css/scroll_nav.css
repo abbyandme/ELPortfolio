@@ -1,0 +1,19 @@
+.text-black{
+    margin-top: 0px;
+    margin-left: -15px;
+    padding: 4px 6px;
+    border: 2px solid #D19369;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.text-black:hover {
+    display: block;
+    border: 2px solid hotpink;
+    font-size: 17px;
+    font-weight: 900;
+    transition: opacity 700ms, transform 700ms;
+    color: rgb(244, 129, 186);
+}
+
